@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+   
+}
+img{
+    width: 100%;
+}
+html{
+    font-family: 'Open Sana ', sans-serif;
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: #404040;;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #1d0f9a;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: orange;
+    padding: 5px 12px ;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.menu ul li a:hover{
+    border-bottom: 4px solid #000;
+    transition: 0.4s;
+}
+
+.signup a{
+    text-decoration: none;
+    color: rgb(227, 179, 7);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 12px 30px;
+    border: 2px solid orange;
+}
+.signup a:hover{
+    background-color: black;
+    transition: 0.6s;
+}
+.body{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    background-image: url(img/wallpa.jpg) ;
+    background-color: #24262b;
+    background-position: center;
+    background-size: cover;
+   
+}
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   position: absolute;
+   
+   }
+          
+.heading{
+    width: 30%;
+    text-align: center;
+    color: rgb(14, 3, 115);
+}
+.heading h1{
+    font-size: 40px;
+}
+.heading a{
+    text-decoration: none;
+    color: #3d00e6c9;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 45px;
+    padding: 14px 50px ;
+    background-color:rgb(202, 108, 13);
+}
+.heading a:hover{
+    letter-spacing: 3px;
+    transition: 0.6s;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+/*About*/
+.About-heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align:center ;
+    margin: 20px auto;
+}
+.About-heading h1{
+    font-size: 50px;
+    background-color: #333333;
+    color:orange;
+    margin-bottom: 25px;
+    position: relative;
+}
+.About-heading::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #f6ff00;
+}
+.About-heading p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+.About-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px ;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.About-img{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.About-img img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.About-img :hover img{
+    transform: scale(1.2);
+}
+.About-content{
+    flex: 1;
+}
+.About-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.About-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+.About-content .read-more{
+display: inline-block;
+padding: 10px 20px;
+background-color: #4caf50;
+color: #fff;
+font-size: 19px;
+text-decoration: none;
+border-radius: 25px;
+margin-top:15px;
+transition: 0.3s ease;
+}
+.About-content .read-more:hover{
+    background-color: #3e8e41;
+}
+
+
+/*Services*/
+.Services {
+    background-color: #333333;
+    width: 100%;
+}
+
+.Services .Services-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Services-header h3 {
+    color: orange;
+    padding: 10px 30px;
+}
+
+.Services-header h4 {
+    color: orange;
+    padding: 10px 20px;
+}
+
+.Services .Services-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    background-color: #404040;
+}
+
+.Services .Services-content .hot-coffees,
+.cold-coffees,
+.cream-coffees {
+
+    width: 250px;
+}
+
+
+.Services .Services-content .hot-coffees .hot-coffees-image img {
+    border-radius: 50%;
+}
+
+.Services .Services-content .cold-coffees .cold-coffees-image img {
+    border-radius: 50%;
+}
+
+.Services .Services-content .cream-coffees .cream-coffees-image img {
+    border-radius: 50%;
+}
+
+
+.Services .Services-content .hot-coffees-body,
+.cold-coffees-body,
+.cream-coffees-body {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Services .Services-content .hot-coffees-body h2,
+.cold-coffees-body h2,
+.cream-coffees-body h2 {
+    color: orange;
+}
+
+.Services .Services-content .hot-coffees-body label,
+.cold-coffees-body label,
+.cream-coffees-body label {
+    color: white;
+    margin-top: 10px;
+}
+/*Booking*/
+.Booking {
+    background-color: #333333;
+    width: 100%;
+}
+
+.Booking .Booking-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Booking .Booking-header h3 {
+    color: orange;
+    padding: 10px 30px;
+}
+
+.Booking .Booking-header h4 {
+    color: orange;
+    padding: 10px 20px;
+}
+
+.Booking-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #404040;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.Booking-box .card {
+    width: 280px;
+    margin: 20px;
+}
+
+.Booking-box .card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.Booking-box .card-image img:hover {
+    transform: scale(1.1);
+    transition: transform .4s ease-in-out;
+    /* لحركة الصورة عند المؤشر */
+}
+
+.Booking-box .Booking-body {
+    padding: 20px;
+    color: white;
+    border: 3px solid #3b3b3b;
+}
+
+.Booking-box .Booking-body h3 {
+    padding: 10px 0;
+}
+
+.Booking-box .Booking-body i {
+    color: yellow;
+    font-size: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+.Booking-box .Booking-body .cash {
+    font-size: 22px;
+    margin-left: 90px;
+}
+
+
+/* Footer*/
+
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size:16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+color: #ffffff;
+padding-left: 10px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+/*responsive*/
+@media(max-width:767px){
+    .footer_col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:574px){
+    .footer_col{
+        width: 100%;
+    }
+}
